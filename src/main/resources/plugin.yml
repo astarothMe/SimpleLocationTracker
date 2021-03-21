@@ -1,0 +1,19 @@
+name: SimpleLocationTracker
+main: com.astaroth.SimpleLocationTracker.Plugin
+version: 1.0
+description: Player location tracker plugin
+permissions:
+  simpletracker.*:
+    default: false
+    description: SimpleTracker wildcard permissions
+    children:
+      simpletracker.command.*:
+        default: op
+        description: SimpleTracker Command wildcard permissions
+        children:
+          simpletracker.command.reload:
+            default: op
+            description: Reload the plugin
+      simpletracker.notrack:
+        default: false
+        description: Prevent player from getting tracked!

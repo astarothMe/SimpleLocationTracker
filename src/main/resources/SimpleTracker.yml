@@ -1,0 +1,18 @@
+mysql:
+  # JDBC URL
+  # URL Example:
+  # 1. jdbc:mysql://localhost:3306/database
+  jdbcURL: jdbc:mysql://localhost:3306/database?useSSL=false&serverTimezone=UTC
+  username: root
+  password: passw0rd
+  maxLifetime: 30000
+  maximumPoolSize: 3
+
+tracker:
+  # Tracking period in second
+  # Lower interval --> higher cpu usage
+  updateInterval: 20
+  # Minimum amount of data that needed for automatic update
+  # logged data count in the ArrayList > log-update-count
+  updateCount: 1000
+  enableCommand: true
